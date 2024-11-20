@@ -12,10 +12,10 @@ const OnBoardingPage = () => {
   return (
     <>
       {/* <Welcome onProceed={handleWelcomeProceed} onSkip={handleSkipSetup} /> */}
-      <Router basename="/onboard">
+      <Router>
         <Routes>
-          <Route path="/" element={<Welcome />} />
-          <Route path="/steps" element={<Stepper />} />
+          <Route path="/onboard" element={<Welcome />} />
+          <Route path="/onboard/steps" element={<Stepper />} />
         </Routes>
     </Router>
     </>
